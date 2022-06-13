@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>about me</title>
+        <link rel="stylesheet" href="{% static 'blog/bootstrap/bootstrap.min.css' %}" media="screen">
+        <link rel="stylesheet" href="{% static 'single_pages/css/about_me.css' %}" media="screen">
+        <script src="https://kit.fontawesome.com/7d695bb7f7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>        
+        {% include 'blog/navbar.html' %} 
+
+        <selction>
+            <div class="container mt-4">
+                <div class="row">  
+                    <div class="col-lg-4">
+                        <h1 class="mt-5">안녕하세요? 헬로월드입니다.</h1>  
+                        <br>
+                        <p>
+                            매일 프로그래밍 공부를 합니다.<br/>
+                            준비해야 할 것이 많습니다.
+                        </p>
+                        <ul>
+                            <li>프로그래밍 언어</li>
+                            <ul>
+                                <li>C++</li>
+                                <li>Python</li>
+                            </ul>
+                            <li>기초 학습</li>
+                            <ul>
+                                <li>이산수학</li>
+                                <li>자료구조</li>
+                                <li>알고리즘</li>
+                            </ul>
+                            <li>인공지능</li>
+                            <ul>
+                                <li>tensorflow</li>
+                                <li>matplotlib</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8">
+                        <img src="{% static 'single_pages/images/003.PNG' %}" alt="me">
+                    </div>
+
+                </div>
+            </div>
+        </selction>
+        <selction class="bg-light margin-for-footer">
+            <div class="container">
+                <div class="row">  
+                    <div class="col-12">
+                        <h1>PORTFOLIO</h1>                        
+                    </div>
+                </div>
+                <div class="row">  
+                    <div class="col-lg-4">
+                        <div class="card" data-toggle="modal" data-target="#me001">
+                            <img class="card-img-top" src="{% static 'single_pages/images/001.PNG' %}" alt="1">
+                            <div class="card-body">
+                                <h5 class="card-title">제목 하나</h5>
+                                <p>내용</p>
+                            </div>
+                        </div>              
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" data-toggle="modal" data-target="#me002">
+                            <img class="card-img-top" src="{% static 'single_pages/images/002.PNG' %}" alt="2">
+                            <div class="card-body">
+                                <h5 class="card-title">제목 둘</h5>
+                                <p>내용</p>
+                            </div>
+                        </div>              
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" data-toggle="modal" data-target="#me003">
+                            <img class="card-img-top" src="{% static 'single_pages/images/004.PNG' %}" alt="3">
+                            <div class="card-body">
+                                <h5 class="card-title">제목 셋</h5>
+                                <p>내용</p>
+                            </div>
+                        </div>              
+                    </div>
+                </div>
+            </div>
+        </selction>
+
+        <!-- Modal -->
+        <div class="modal fade" id="me001" tabindex="-1" role="dialog" aria-labelledby="me001ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="me001ModalLabel">파이썬으로 통계업무 자동화하기</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <img class="img-fluid" src="{% static 'single_pages/images/001.PNG' %}">
+                            </div>
+                            <div class="col-lg-5">
+                                <p>Python, Django, Pandas, python-docx로 통계업무 자동화한 내용을 파이콘에서 발표했습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="me002" tabindex="-1" role="dialog" aria-labelledby="me002ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="me002ModalLabel">파이썬 사용자를 위한 웹개발 입문 A to Z Django + Bootstrap</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <img class="img-fluid" src="{% static 'single_pages/images/002.PNG' %}">
+                            </div>
+                            <div class="col-lg-5">
+                                <p>파이썬 초보를 대상으로 한 웹개발 강좌입니다. 인프런에서 서비스하고 있습니다.</p>
+                                <button type="button" class="btn btn-light"><i class="fas fa-chalkboard-teacher"></i> 인프런</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="me003" tabindex="-1" role="dialog" aria-labelledby="me003ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="me003ModalLabel">직장인을 위한 프로그래밍 입문과 업무자동화 활용</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <img class="img-fluid" src="{% static 'single_pages/images/004.PNG' %}">
+                            </div>
+                            <div class="col-lg-5">
+                                <p>코딩에 대해 아무것도 모르는 직장인들도 쉽게 프로그래밍의 기본 개념과 문법을 실습을 통해 배우고, 파일 입출력, 엑셀 데이터 처리, MS-word 문서 자동으로 만들기, 그래프 그리기, 웹스크래핑 등을 배웁니다.</p>
+                                <button type="button" class="btn btn-light"><i class="fas fa-chalkboard-teacher"></i> 인프런</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="fixed-bottom">
+            {% include 'blog/footer.html' %} 
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+                
+    </body>
+</html>

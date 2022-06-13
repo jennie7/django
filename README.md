@@ -1,2 +1,2 @@
-# django
-django homepage
+# myhome
+Park Young Jin 's homepage
