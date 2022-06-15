@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 db.sqlite3
-migrations/
+#migrations/
 .idea/
 
 .env.prod 
